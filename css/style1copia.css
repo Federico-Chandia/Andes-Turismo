@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Encode Sans, roboto; }
+
+main {
+    margin-top: 80px;
+    background-color: #fff }
+  main #titulo {
+    display: flex;
+    justify-content: center; }
+  main.cuerpo p {
+    display: flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px; }
+  main h3 {
+    font-size: 5vh;
+    padding-left: 10px; }
+  main img:hover {
+    margin: 20px; }
