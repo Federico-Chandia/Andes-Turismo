@@ -4,13 +4,98 @@
   box-sizing: border-box;
   font-family: Encode Sans, roboto; }
 
+.contenedor {
+  display: grid;
+  height: 98vh;
+  grid-template-areas: "header header"
+ "main  main"
+ "section section "
+ "footer  footer";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 10px; }
+
+.header {
+  grid-area: header; }
+
+.siderbar {
+  grid-area: siderbar; }
+
+.main {
+  grid-area: main; }
+
+.footer {
+  grid-area: footer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  img {
+    width: 600px;
+    height: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  h2 {
+    font-size: 6vh; }
+  h3 {
+    font-size: 4vh; }
+  p {
+    display: flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    font-size: 1.5vw;
+    margin: 5px  20px 30px  20px; } }
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 570px;
+    height: 370px;
+    padding-top: 9px;
+    padding-bottom: 10px; }
+  p {
+    display: flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    font-size: 2vw;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px; } }
+
+@media screen and (max-width: 480px) {
+  img {
+    width: 570px;
+    height: 370px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  h2 {
+    font-size: 6vh; }
+  h3 {
+    font-size: 7vh; }
+  p {
+    display: flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    font-size: 6vw;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px; } }
+
+nav ul li a {
+  color: #fff; }
+
 main {
-    margin-top: 80px;
-    background-color: #fff }
+  margin-top: 35px;
+  background-color: #fff; }
   main #titulo {
     display: flex;
     justify-content: center; }
-  main.cuerpo p {
+  main p {
     display: flex;
     text-align: justify;
     flex-wrap: wrap;
@@ -18,8 +103,32 @@ main {
     margin-bottom: 30px;
     margin-left: 20px;
     margin-right: 20px; }
+  main h1 {
+    padding-left: 10px; }
+  main a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 15px; }
+  main img {
+    width: 60%;
+    height: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    main img:hover {
+      background-color: green;
+      margin: 15px; }
+  main h2 {
+    margin-bottom: 1.5rem;
+    text-align: center; }
   main h3 {
     font-size: 5vh;
     padding-left: 10px; }
-  main img:hover {
-    margin: 20px; }
+
+section {
+  padding: 20px; }
+
+#pie {
+  background-color:#f2f2f26e;
+  font-size: 15px;
+  margin-top: 50px;
+  padding: 5px; }
