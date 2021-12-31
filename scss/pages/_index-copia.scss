@@ -1,12 +1,6 @@
-nav {
-    ul {
-        li {
-            a {
-                color: $color-text;
-            }
-        }
-    }
-}
+$map1:(
+    color: #f2f2f26e, font: 15px, top: 5px, pad: 5px);
+
 
 main {
     margin-top: 35px;
@@ -60,13 +54,14 @@ main {
     }
 }
 
+
 section {
     padding: 20px;
 }
 
 #pie {
-    background-color: $bc-color;
-    font-size: 15px;
-    margin-top: 50px;
-    padding: 5px;
+    background-color: map-get($map: $map1, $key:color );
+    font-size: map-get($map1, font );
+    margin-top: map-get($map: $map1, $key:top );
+    padding: map-get($map: $map1, $key:pad );
 }
