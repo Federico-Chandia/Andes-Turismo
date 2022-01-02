@@ -94,7 +94,7 @@ main {
     text-align: justify;
     flex-wrap: wrap;
     margin-top: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px; }
   main h1 {
@@ -114,7 +114,7 @@ main {
   main h2 {
     margin-bottom: 1.5rem;
     text-align: center; }
-  main h3 {
+  main .lista {
     font-size: 5vh;
     padding-left: 10px; }
 
