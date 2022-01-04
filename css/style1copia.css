@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Encode Sans, roboto;}
+  font-family: Encode Sans, roboto; }
 
 .contenedor {
   display: grid;
@@ -39,9 +39,9 @@
     height: 60%;
     padding-top: 10px;
     padding-bottom: 10px; }
-  h2 {
+  h1 {
     font-size: 6vh; }
-  h3 {
+  .lista {
     font-size: 4vh; }
   p {
     display: flex;
@@ -72,9 +72,9 @@
     height: 370px;
     padding-top: 10px;
     padding-bottom: 10px; }
-  h2 {
+  h1 {
     font-size: 6vh; }
-  h3 {
+  .lista {
     font-size: 7vh; }
   p {
     display: flex;
@@ -86,25 +86,25 @@
     margin-left: 20px;
     margin-right: 20px; } }
 
-nav ul li a {
-  color: #fff; }
-
 main {
   margin-top: 35px;
   background-color: #fff; }
   main #titulo {
     display: flex;
-    justify-content: center; }
+    flex-direction: none;
+    justify-content: center;
+    align-items: none;
+    flex-wrap: none; }
   main p {
     display: flex;
-    text-align: justify;
+    flex-direction: none;
+    justify-content: justify;
+    align-items: none;
     flex-wrap: wrap;
     margin-top: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px; }
-  main h1 {
-    padding-left: 10px; }
   main a {
     color: #ffff;
     text-decoration: none;
@@ -117,18 +117,20 @@ main {
     main img:hover {
       background-color: green;
       margin: 15px; }
-  main h2 {
-    margin-bottom: 1.5rem;
-    text-align: center; }
-  main h3 {
+  main .lista {
     font-size: 5vh;
     padding-left: 10px; }
 
 section {
-  padding: 20px; }
+  padding-left: 10px; }
+  section iframe {
+    transform: translatex(45%); }
+  section .recordatorio1 p, section .recordatorio2 p {
+    font-size: 15px;
+    margin: 20px; }
 
 #pie {
-  background-color:#f2f2f26e;
+  background-color: #f2f2f26e;
   font-size: 15px;
-  margin-top: 50px;
+  margin-top: 5px;
   padding: 5px; }

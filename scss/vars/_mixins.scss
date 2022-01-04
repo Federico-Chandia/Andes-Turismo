@@ -1,0 +1,7 @@
+@mixin flex ($dir:none, $just:none, $ali:none, $wrap:none) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $ali;
+    flex-wrap: $wrap;
+}
