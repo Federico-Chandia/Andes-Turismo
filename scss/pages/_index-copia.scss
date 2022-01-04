@@ -1,20 +1,17 @@
 $map1:(
     color: #f2f2f26e, font: 15px, top: 5px, pad: 5px);
-
+@import "./vars/mixins";
 
 main {
     margin-top: 35px;
     background-color: #fff;
 
     #titulo {
-        display: flex;
-        justify-content: center;
+        @include flex(none, center, none,none);
     }
 
     p {
-        display: flex;
-        text-align: justify;
-        flex-wrap: wrap;
+        @include flex(none,justify,none, wrap);
         margin-top: 5px;
         margin-bottom: 20px;
         margin-left: 20px;
@@ -22,7 +19,8 @@ main {
     }
 
     h1 {
-        padding-left: 10px;
+        margin-bottom: 1.5rem;
+        text-align: center;
     }
 
     a {
@@ -43,11 +41,6 @@ main {
         }
     }
 
-    h2 {
-        margin-bottom: 1.5rem;
-        text-align: center;
-    }
-
     .lista {
         font-size: 5vh;
         padding-left: 10px;
@@ -56,7 +49,18 @@ main {
 
 
 section {
-    padding: 20px;
+    padding-left: 10px;
+    iframe{
+        transform: translatex(45%);
+    }
+    .recordatorio1{
+        p{
+        font-size: map-get($map: $map1, $key: font);
+        margin: 20px;}
+    }
+    .recordatorio2{
+        @extend .recordatorio1
+    }
 }
 
 #pie {

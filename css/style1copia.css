@@ -7,7 +7,10 @@
 .contenedor {
   display: grid;
   height: 98vh;
-  grid-template-areas: "header header" "main  main" "section section " "footer  footer";
+  grid-template-areas: "header header"
+ "main  main"
+ "section section "
+ "footer  footer";
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   grid-gap: 10px; }
@@ -36,9 +39,9 @@
     height: 60%;
     padding-top: 10px;
     padding-bottom: 10px; }
-  h2 {
+  h1 {
     font-size: 6vh; }
-  h3 {
+  .lista {
     font-size: 4vh; }
   p {
     display: flex;
@@ -69,9 +72,9 @@
     height: 370px;
     padding-top: 10px;
     padding-bottom: 10px; }
-  h2 {
+  h1 {
     font-size: 6vh; }
-  h3 {
+  .lista {
     font-size: 7vh; }
   p {
     display: flex;
@@ -88,17 +91,20 @@ main {
   background-color: #fff; }
   main #titulo {
     display: flex;
-    justify-content: center; }
+    flex-direction: none;
+    justify-content: center;
+    align-items: none;
+    flex-wrap: none; }
   main p {
     display: flex;
-    text-align: justify;
+    flex-direction: none;
+    justify-content: justify;
+    align-items: none;
     flex-wrap: wrap;
     margin-top: 5px;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px; }
-  main h1 {
-    padding-left: 10px; }
   main a {
     color: #ffff;
     text-decoration: none;
@@ -111,15 +117,17 @@ main {
     main img:hover {
       background-color: green;
       margin: 15px; }
-  main h2 {
-    margin-bottom: 1.5rem;
-    text-align: center; }
   main .lista {
     font-size: 5vh;
     padding-left: 10px; }
 
 section {
-  padding: 20px; }
+  padding-left: 10px; }
+  section iframe {
+    transform: translatex(45%); }
+  section .recordatorio1 p, section .recordatorio2 p {
+    font-size: 15px;
+    margin: 20px; }
 
 #pie {
   background-color: #f2f2f26e;
