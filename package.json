@@ -3,7 +3,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/estilos.scss css/style.css",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css1/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "test": "echo \"Error: no test specified\" && exit 1"},
     "author": "",
