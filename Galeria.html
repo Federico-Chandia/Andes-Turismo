@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es-AR">
 
 <head>
   <meta charset="UTF-8">
@@ -8,12 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css\style.css">
+  <link rel="icon" type="image/x-icon" href="Logo.jpg">
+  <link rel="stylesheet" href="css1\style.css">
   <link rel="icon" type="image/x-icon" href="C:\Users\Usuario\Desktop\Clase 1\Css1\logo1.JPG">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <title>Andes Turismo</title>
 </head>
 
@@ -38,7 +38,7 @@
               <a class="nav-link active" aria-current="page" href="Nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Ubicacion.html">Ubicacion</a>
+              <a class="nav-link active" aria-current="page" href="fauna.html">Fauna</a>
             </li>
             <li class="nav-item">
               <a target="_blank" class="nav-link active" aria-current="page"
@@ -49,8 +49,8 @@
     </nav>
   </header>
   <div class="contenedor">
-  <div>
-    <main class="main">
+    <div>
+      <main class="main">
         <h1>Galeria de Posibles Destinos</h1>
 
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -59,6 +59,10 @@
             <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
             <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
             <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
           </div>
 
           <div class="carousel-inner">
@@ -67,8 +71,8 @@
                 src="https://p4.wallpaperbetter.com/wallpaper/577/50/551/photography-of-green-tree-wallpaper-preview.jpg"
                 alt="aconcagua" class="d-block w-100">
               <div class="carousel-caption">
-                <h3>Aconcagua</h3>
-                <p>Mendoza</p>
+                <h3 class="caption">Aconcagua</h3>
+                <p class="provincia-galeria">Mendoza</p>
               </div>
             </div>
             <div class="carousel-item">
@@ -76,8 +80,8 @@
                 src="https://p4.wallpaperbetter.com/wallpaper/908/717/100/mountains-lake-glacier-the-bushes-argentina-hd-wallpaper-preview.jpg"
                 alt="glaciar" class="d-block w-100">
               <div class="carousel-caption">
-                <h3>Glaciar Perito Moreno</h3>
-                <p>Santa Cruz</p>
+                <h3 class="caption">Glaciar Perito Moreno</h3>
+                <p class="provincia-galeria">Santa Cruz</p>
               </div>
             </div>
             <div class="carousel-item">
@@ -85,8 +89,32 @@
                 src="https://p4.wallpaperbetter.com/wallpaper/178/834/398/waterfall-landscape-water-nature-wallpaper-preview.jpg"
                 alt="cataratas" class="d-block w-100">
               <div class="carousel-caption">
-                <h3>Cataratas del Iguazu</h3>
-                <p>Misiones</p>
+                <h3 class="caption">Cataratas del Iguazu</h3>
+                <p class="provincia-galeria">Misiones</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="http://alojamientosargentina.com.ar/admin/blog/original/4b1e15_axdourldbaabcvta.jpg" alt="cueva"
+                class="d-block w-100">
+              <div class="carousel-caption">
+                <h3 class="caption">Cuevas de Acsibi</h3>
+                <p class="provincia-galeria">Salta</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.argentinaenviaje.com/wp-content/uploads/2020/10/CasaTucuman.jpg"
+                alt="casita-de-tucuman" class="d-block w-100">
+              <div class="carousel-caption">
+                <h3 class="caption">Casa Histórica de la Independencia </h3>
+                <p class="provincia-galeria">Tucuman</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.argentinaenviaje.com/wp-content/uploads/2020/10/TrevelinChubut.jpg" alt="tulipanes"
+                class="d-block w-100">
+              <div class="carousel-caption">
+                <h3 class="caption">Travelin</h3>
+                <p class="provincia-galeria">Chubut</p>
               </div>
             </div>
           </div>
@@ -98,84 +126,135 @@
             <span class="carousel-control-next-icon"></span>
           </button>
         </div>
-      </div>
+    </div>
     </main>
   </div>
-      <br>
-      <div class="section s-g">
-      <h3 class="guia">Guia para vacacionar</h3>
-      <ol>
-        <li> Elegir el lugar</li>
-        <li> Reservar los vuelos</li>
-        <li> Reservar la estadia</li>
-        <li> Armar las valijas</li>
-        <li> Disfrutar la salida</li>
-      </ol>
-    </div>
+  <br>
+
+  <h2 class="titulo-clima">Clima para viajar por Argentina</h2>
+  <p>Al ser un país muy extenso, el clima es diferente en el sur, en el norte y en el centro. De acuerdo a la época en
+    que vas a viajar a Argentina, tendrías que llevar tanto ropa de abrigo como más liviana.
+
+    Si vas a visitar la Patagonia, la mejor época para viajar es desde noviembre a marzo, cuando las temperaturas
+    durante el día son agradables, aunque por la noche desciendan, especialmente en la zona de la cordillera. En
+    invierno hace mucho frío, pero es la época donde la gente acude a los centros de esquí que se encuentran sobre la
+    Cordillera de los Andes.
+
+    Si vas a visitar Cataratas del Iguazú o el Noroeste Argentino, la mejor época es el invierno, de mayo a octubre,
+    cuando el calor no es sofocante. Hay que tener en cuenta que durante el verano argentino, en el Noroeste se produces
+    precipitaciones que inundan los caminos.
+
+    Buenos Aires y la zona central del país puede visitarse todo el año. Los inviernos no son tan fríos ni los veranos
+    tan calurosos, aunque la época veraniega puede servir para visitar alguna de las playas cercanas a Buenos Aires como
+    Pinamar o Mar del Plata, e incluso disfrutar de las playas agrestes de la Patagonia como Puerto Madryn.</p>
+
+  <h3>Curiosidades de Argentina</h3>
+  <p>Población: Argentina tiene unos 46 millones de habitantes, pero su distribución en el país no es homogénea. Más del
+    30% de la población se concentra entre la capital Buenos Aires y el llamada Gran Buenos Aires, que incluye los
+    alrededores. En toda la Patagonia, en cambio, viven menos de dos millones de personas en un territorio enorme.
+    <span>Gauchos: una de los personajes tradicionales de la zona de la Pampa Húmeda (interior de la provincia de Buenos
+      Aires, sur de Santa Fé y Córdoba). El gaucho era un personaje de campo con una vestimenta típica, que normalmente
+      iba a caballo. Hay muchas leyendas acerca de este personaje e incluso el libro Martín Fierro se basa en él. Hoy en
+      día, se pueden seguir viendo los gauchos en pueblos pequeños del interior de la provincia de Buenos Aires, pero
+      más modernizados que en otras épocas.</span>
+    <span>Mate: la infusión habitual en cualquier mesa argentina, sin importar la época del año. Normalmente se consume
+      en el desayuno o la merienda y es motivo de reunión familiar o de amigos.</span>
+    Cosas dulces: una de las características del país es la gran variedad de golosinas y productos dulces. Hay
+    alfajores, caramelos, turrones e infinidad de tartas.
+    <span>Comida italiana a lo argentino: otra de las tradiciones argentinas que ha sido importada por los inmigrantes
+      italianos es la pasta. Normalmente los domingos al mediodía tiene lugar la reunión familiar para comer las pastas
+      caseras o compradas en una fabrica de pastas.</span>
+    <span>El ego argentino: mucho se habla de esto en el mundo, y en parte tienen razón. El argentino muchas veces cae
+      arrogante, soberbio y sabelotodo. Aquí no hay que generalizar, normalmente los porteños (así se le llama a los
+      habitantes de Buenos Aires) son los que tienen más fama de su ego, pero siempre te vas a encontrar con gente
+      humilde en la calle.</span>
+    <span>Costumbres de la población indígena: sabido es que el territorio argentino estaba poblado por indígenas antes
+      de la conquista española. Pese a que fueron masacrados siglos tras siglos, aún hay población indígena en el país,
+      sobre todo en el noroeste argentino, las provincias de Chaco y Formosa y los mapuches en el sur del país. En
+      cuanto a festividades y comidas tradicionales del pueblo indígena, viajando por el noroeste del país es donde más
+      se ve. Por ejemplo, la fiesta de la Pachamama (Madre Tierra) tiene un gran protagonismo en las provincias de Salta
+      y Jujuy.</span>
+    <span>Tango: uno de los mejores espectáculos del país, principalmente en la ciudad de Buenos Aires, en barrios como
+      San Telmo o La Boca. Originario de los cabarets, hay muchas «milongas» y lugares de espectáculos en Buenos Aires
+      para presenciar este maravilloso baile y música que se sigue transmitiendo de generación en generación.</span></p>
+  <div class="section s-g">
+    <h3 class="guia">Guia para vacacionar</h3>
+    <ol class="lista-1">
+      <li> Elegir el lugar</li>
+      <li> Reservar los vuelos</li>
+      <li> Reservar la estadia</li>
+      <li> Armar las valijas</li>
+      <li> Disfrutar la salida</li>
+    </ol>
+  </div>
 
   <br>
   <hr>
   <div class="footer">
-  <footer id="pie">
-    <p>Ratings and Reviews: © TripAdvisor</p>
-    <p>Información turística sobre la República Argentina</p>
-    <div>
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
-          Contacto
-        </button>
-      </div>
-      <div class="modal fade" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">                       
-            <div class="modal-body">
-              <fieldset>
-                <legend><h4 class="modal-title">Contactanos</h4></legend>
-                <form>
-                    <label for="nombre-apellido">Su nombre:</label>
-                    <input type="text" name="nombre-apellido" placeholder=" Ingrese su nombre aqui">
-                </form>
-                <br>
-                <form>
-                <label for="email">E-mail:</label>
-                <input type="text" name="email" placeholder=" Ingrese su correo aqui">
-            </form>
-            <br>
-           <legend>Ciudad</legend>
-               <form>
-                 <label for="ciudad"></label>
-                 <input type="text">
-            </form>
-            <br>  
+    <footer id="pie">
+      <ul class="nav-ul">
+        <li>Ratings and Reviews: © TripAdvisor</li>
+        <li>Información turística sobre la República Argentina</li>
+      </ul>
+      <!--Modal de contacto-->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+        Contacto
+      </button>
+  </div>
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <fieldset>
+            <legend>
+              <h4 class="modal-title">Contactanos</h4>
+            </legend>
             <form>
-                <legend>Tipo de consulta</legend>
-                <select name="consulta">
-                    <option>Sugerencias</option>
-                    <option value="q">Quiero aparecer en su sitio</option>
-                    <option value="c">Copyrigth</option>
-                    <option value="r">Reportes</option>
-                </select>
+              <label for="nombre-apellido">Su nombre:</label>
+              <input type="text" name="nombre-apellido" placeholder=" Ingrese su nombre aqui">
             </form>
             <br>
             <form>
-                <div>Acepta <a href="#">terminos</a> y <a href="">condiciones</a>
+              <label for="email">E-mail:</label>
+              <input type="text" name="email" placeholder=" Ingrese su correo aqui">
+            </form>
+            <br>
+            <legend>Ciudad</legend>
+            <form>
+              <label for="ciudad"></label>
+              <input type="text">
+            </form>
+            <br>
+            <form>
+              <legend>Tipo de consulta</legend>
+              <select name="consulta">
+                <option>Sugerencias</option>
+                <option value="q">Quiero aparecer en su sitio</option>
+                <option value="c">Copyrigth</option>
+                <option value="r">Reportes</option>
+              </select>
+            </form>
+            <br>
+            <form>
+              <div>Acepta <a href="#">terminos</a> y <a href="">condiciones</a>
                 <input type="checkbox" name="Acepta" value="1">
               </div>
             </form>
             <br>
             <div class="modal-footer">
-            <form>
-            <button type="button" id="reset">Limpiar</button>
-            <button type="button" id="send" data-bs-dismiss="modal">Enviar formulario</button>
-               
-            </form>
+              <form>
+                <button type="button" id="reset">Limpiar</button>
+                <button type="button" id="send" data-bs-dismiss="modal">Enviar formulario</button>
+
+              </form>
             </div>
-   
-            </div>
-      </fieldset>
-          </div>
+
         </div>
-  </footer>
-</div>
+        </fieldset>
+      </div>
+    </div>
+    </footer>
+  </div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

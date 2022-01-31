@@ -1,0 +1,340 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "inter", roboto; }
+
+.contenedor {
+  display: grid;
+  height: 98vh;
+  grid-template-areas: "header header"
+ "main  main"
+ "section section "
+ "footer  footer";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 10px; }
+
+.header {
+  grid-area: header; }
+
+.siderbar {
+  grid-area: siderbar; }
+
+.main {
+  grid-area: main; }
+
+.footer {
+  grid-area: footer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  img {
+    width: 600px;
+    height: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  h2 {
+    font-size: 6vh; }
+  h3 {
+    font-size: 4vh; }
+  p {
+    display: flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    font-size: 1.5vw;
+    margin: 5px  20px 30px  20px; } }
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 570px;
+    height: 370px;
+    padding-top: 9px;
+    padding-bottom: 10px; }
+  p {
+    display: flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    font-size: 2vw;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px; } }
+
+@media screen and (max-width: 480px) {
+  img {
+    width: 570px;
+    height: 370px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  h2 {
+    font-size: 6vh; }
+  h3 {
+    font-size: 7vh; }
+  p {
+    display: flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    font-size: 6vw;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px; } }
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+  top: 0; }
+
+.nav-ul {
+  display: inline-flex;
+  font-size: 15px;
+  list-style: none;
+  text-align: center; }
+  .nav-ul li {
+    margin-right: 1em; }
+
+main {
+  margin-top: 80px;
+  background-color: #fff; }
+
+.titulo {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: none;
+  color: #fafafa; }
+
+.descripcion {
+  font-size: 1.5vw; }
+
+h1 {
+  text-align: center; }
+
+p {
+  display: flex;
+  flex-direction: none;
+  justify-content: justify;
+  align-items: none;
+  flex-wrap: wrap;
+  font-size: 2vw;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+h2 {
+  margin-bottom: 1.5rem;
+  text-align: center; }
+
+h3 {
+  font-size: 5vh;
+  padding-left: 10px; }
+
+img {
+  width: 80vw;
+  height: 80vh;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.lista {
+  font-size: 3vw;
+  padding-right: 10px; }
+
+.caption {
+  background-color: cornflowerblue;
+  display: inline-block;
+  padding: 5px; }
+
+.provincia-galeria {
+  display: table;
+  background-color: black;
+  padding: 5px; }
+
+.desc {
+  padding: 15px;
+  text-align: center; }
+
+.recordatorio2 {
+  font-size: 1.5vw; }
+
+.cards {
+  display: inline-flex;
+  margin-left: 20px; }
+
+.tarj-1 {
+  margin: 25px; }
+  .tarj-1 .img-card {
+    height: 264px;
+    padding-top: 0; }
+
+.tarj-2 {
+  margin: 25px; }
+  .tarj-2 .img-card {
+    height: 264px;
+    padding-top: 0; }
+
+.contenedor-imagen {
+  height: 100vh; }
+
+.guia {
+  text-align: center; }
+
+.bg-i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://seminariorueda.unju.edu.ar/images/2019/tilcara/paisaje_norte_juje%C3%B1o.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -7em;
+  margin-left: -1em;
+  margin-bottom: 1em; }
+
+.bg-f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://www.conicet.gov.ar/wp-content/uploads/Elefante-Marino-del-Sur.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -7em;
+  margin-left: -1em;
+  margin-bottom: 1em; }
+
+.bg-n {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://images.unsplash.com/photo-1558978325-66dcf73b99b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -7em;
+  margin-left: -1em;
+  margin-bottom: 1em; }
+
+section {
+  padding: 20px; }
+  section .iframe-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; }
+  section .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none; }
+
+.s-g {
+  padding-top: 30px; }
+
+.guia {
+  text-align: center; }
+
+.lista-1 {
+  font-size: 1.5vw; }
+
+input[type=text] {
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 4px; }
+
+#reset {
+  background-color: #a0a5a0;
+  border: none;
+  color: white;
+  padding: 6px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px; }
+
+#send {
+  background-color: #5571f1;
+  border: none;
+  color: white;
+  padding: 6px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px; }
+
+footer {
+  font-size: 15px;
+  padding-top: 30px;
+  background-color: #f2f2f26e; }
+  footer .pie-parrafo {
+    font-size: 16px; }
+  footer .tyc {
+    color: #5571f1; }
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  img {
+    width: 80vw;
+    height: 70vh;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  h2 {
+    font-size: 3vh; }
+  h3 {
+    font-size: 3vh; }
+  p {
+    display: flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    font-size: 1.5vw;
+    margin: 5px  20px 30px  20px; } }
+
+@media (min-width: 480px) and (max-width: 768px) {
+  img {
+    width: 80vw;
+    height: 80vh;
+    padding-top: 9px;
+    padding-bottom: 10px; }
+  p {
+    display: flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    font-size: 2vw;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px; } }
+
+@media (min-width: 220px) and (max-width: 480px) {
+  img {
+    width: 80vw;
+    height: 70vh;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  h2 {
+    font-size: 6vh; }
+  h3 {
+    font-size: 7vh; }
+  p {
+    display: flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    font-size: 6vw;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px; } }
