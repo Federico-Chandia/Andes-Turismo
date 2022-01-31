@@ -19,7 +19,7 @@
   <header class="header ">
     <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Andes Turismo</a>
+        <a class="navbar-brand" href="index.html">Andes Turismo</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,16 +27,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="Galeria.html">Galeria</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+              <a class="nav-link active" aria-current="page" href="excursiones.html">Excursiones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Ubicacion.html">Ubicacion</a>
+              <a class="nav-link active" aria-current="page" href="fauna.html">Fauna</a>
             </li>
             <li class="nav-item">
               <a target="_blank" class="nav-link active" aria-current="page"
@@ -48,7 +48,7 @@
   <main class="container-fluid razones main">
     <div class="cuerpo">
       <div class="bg-n">
-        <h1 class="titulo">¿Quienes somos?</h1>
+        <h1 class="titulo-nos">¿Quienes somos?</h1>
       </div>
 
       <h4>Con el corazon en Argentina y la mente en sus hermosos paisajes este espacio surgio de las ganas de dar
@@ -76,10 +76,72 @@
   </main>
 
 
-  <footer id="pie">
-    <p>Ratings and Reviews: © TripAdvisor</p>
-    <p>Información turística sobre la República Argentina</p>
-  </footer>
+  <div class="footer">
+    <footer id="pie">
+      <ul class="nav-ul">
+        <li>Ratings and Reviews: © TripAdvisor</li>
+        <li>Información turística sobre la República Argentina</li>
+      </ul>
+      <!--Modal de contacto-->
+      <button type="button" class="btn pie-parrafo" data-bs-toggle="modal" data-bs-target="#myModal">
+        Contacto
+      </button>
+
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <fieldset>
+                <legend>
+                  <h4 class="modal-title titulo-form">Contactanos</h4>
+                </legend>
+                <form>
+                  <label for="nombre-apellido">Su nombre:</label>
+                  <input type="text" name="nombre-apellido" placeholder=" Ingrese su nombre aqui">
+                </form>
+                <br>
+                <form>
+                  <label for="email">E-mail:</label>
+                  <input type="text" name="email" placeholder=" Ingrese su correo aqui">
+                </form>
+                <br>
+                <legend>Ciudad</legend>
+                <form>
+                  <label for="ciudad"></label>
+                  <input type="text">
+                </form>
+                <br>
+                <form>
+                  <legend>Tipo de consulta</legend>
+                  <select name="consulta">
+                    <option>Sugerencias</option>
+                    <option value="q">Quiero aparecer en su sitio</option>
+                    <option value="c">Copyrigth</option>
+                    <option value="r">Reportes</option>
+                  </select>
+                </form>
+                <br>
+                <form>
+                  <div>Acepta <a class="tyc" href="#">terminos</a> y <a class="tyc" href="">condiciones</a>
+                    <input type="checkbox" name="Acepta" value="1">
+                  </div>
+                </form>
+                <br>
+                <div class="modal-footer">
+                  <form>
+                    <button type="button" id="reset">Limpiar</button>
+                    <button type="button" id="send" data-bs-dismiss="modal">Enviar formulario</button>
+
+                  </form>
+                </div>
+            </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </div>
 
 
 
