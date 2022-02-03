@@ -27,65 +27,6 @@
 .footer {
   grid-area: footer; }
 
-@keyframes aparecer {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  img {
-    width: 600px;
-    height: 60%;
-    padding-top: 10px;
-    padding-bottom: 10px; }
-  h2 {
-    font-size: 6vh; }
-  h3 {
-    font-size: 4vh; }
-  p {
-    display: flex;
-    text-align: justify;
-    flex-wrap: wrap;
-    font-size: 1.5vw;
-    margin: 5px  20px 30px  20px; } }
-
-@media screen and (max-width: 768px) {
-  img {
-    width: 570px;
-    height: 370px;
-    padding-top: 9px;
-    padding-bottom: 10px; }
-  p {
-    display: flex;
-    text-align: justify;
-    flex-wrap: wrap;
-    font-size: 2vw;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    margin-right: 20px; } }
-
-@media screen and (max-width: 480px) {
-  img {
-    width: 570px;
-    height: 370px;
-    padding-top: 10px;
-    padding-bottom: 10px; }
-  h2 {
-    font-size: 6vh; }
-  h3 {
-    font-size: 7vh; }
-  p {
-    display: flex;
-    text-align: justify;
-    flex-wrap: wrap;
-    font-size: 6vw;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    margin-right: 20px; } }
-
 header {
   position: fixed;
   width: 100%;
@@ -111,6 +52,11 @@ main {
   align-items: center;
   flex-wrap: none;
   color: #fafafa; }
+
+.titulo-clima {
+    text-align: center;
+    font-size: 6vh;
+    margin-top: 17vw; }
 
 .descripcion {
   font-size: 1.5vw; }
@@ -139,14 +85,21 @@ h3 {
   padding-left: 10px; }
 
 img {
-  width: 80vw;
-  height: 80vh;
+  width: 70vw;
+  height: 90vh;
   padding-top: 10px;
   padding-bottom: 10px; }
 
 .lista {
   font-size: 3vw;
   padding-right: 10px; }
+
+.lista-1 {
+    font-size: 3.5vh; }
+
+.guia {
+    font-size: 6vh;
+    text-align: center; }
 
 .caption {
   background-color: cornflowerblue;
@@ -164,6 +117,9 @@ img {
 
 .recordatorio2 {
   font-size: 1.5vw; }
+
+.recordatorio-lista{
+  font-size: 2vh;}
 
 .cards {
   display: inline-flex;
@@ -293,15 +249,21 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px; }
   h2 {
-    font-size: 3vh; }
+    font-size: 5vh; }
   h3 {
-    font-size: 3vh; }
+    font-size: 4vh; }
   p {
     display: flex;
     text-align: justify;
     flex-wrap: wrap;
-    font-size: 1.5vw;
-    margin: 5px  20px 30px  20px; } }
+    font-size: 2vw;
+    margin: 5px  20px 30px  20px; }
+
+ .cards {
+    display: block;
+    justify-content: center; }
+ .tarj-1 .tarj-2 {
+    width: 90vw; }}
 
 @media (min-width: 480px) and (max-width: 768px) {
   img {
@@ -337,4 +299,19 @@ footer {
     margin-top: 5px;
     margin-bottom: 30px;
     margin-left: 20px;
-    margin-right: 20px; } }
+    margin-right: 20px; }
+
+ .caption {
+    font-size: 4vh; }
+  
+ .provincia-galeria {
+    font-size: 2vh;
+    display: table;
+    background-color: black;
+    padding: 5px; }
+ 
+ .lista-1 {
+    font-size: 4.5vh; }
+ .cards {
+    display: block;
+    justify-content: center; }}
