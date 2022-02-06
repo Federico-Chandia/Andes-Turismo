@@ -7,10 +7,7 @@
 .contenedor {
   display: grid;
   height: 98vh;
-  grid-template-areas: "header header"
- "main  main"
- "section section "
- "footer  footer";
+  grid-template-areas: "header header" "main  main" "section section " "footer  footer";
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   grid-gap: 10px; }
@@ -26,6 +23,65 @@
 
 .footer {
   grid-area: footer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  img {
+    width: 600px;
+    height: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  h2 {
+    font-size: 6vh; }
+  h3 {
+    font-size: 4vh; }
+  p {
+    display: flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    font-size: 1.5vw;
+    margin: 5px  20px 30px  20px; } }
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 570px;
+    height: 370px;
+    padding-top: 9px;
+    padding-bottom: 10px; }
+  p {
+    display: flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    font-size: 2vw;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px; } }
+
+@media screen and (max-width: 480px) {
+  img {
+    width: 570px;
+    height: 370px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  h2 {
+    font-size: 6vh; }
+  h3 {
+    font-size: 7vh; }
+  p {
+    display: flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    font-size: 6vw;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px; } }
 
 header {
   position: fixed;
@@ -57,7 +113,7 @@ main {
     text-align: center;
     margin-top: 17vw; }
   main .descripcion {
-    font-size: 2.5vw; }
+    font-size: 1.5vw; }
   main h1 {
     text-align: center; }
   main p {
@@ -66,7 +122,7 @@ main {
     justify-content: justify;
     align-items: none;
     flex-wrap: wrap;
-    font-size: 3vw;
+    font-size: 2vw;
     margin: 5px 20px 20px 20px; }
   main h2 {
     margin-bottom: 1.5rem;
@@ -176,10 +232,9 @@ section {
   section .s-g {
     padding-top: 30px; }
   section .guia {
-    text-align: center;
-    font-size: 7vh; }
+    text-align: center; }
   section .lista-1 {
-    font-size: 2vw; }
+    font-size: 1.5vw; }
 
 footer {
   font-size: 15px;
@@ -217,26 +272,29 @@ footer {
     border-radius: 4px; }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-  main img {
-    width: 70vw;
-    height: 90vh;
+  img {
+    width: 80vw;
+    height: 70vh;
     padding-top: 10px;
     padding-bottom: 10px; }
   h2 {
-    font-size: 3vh; }
+    font-size: 5vh; }
   h3 {
-    font-size: 3vh; }
+    font-size: 4vh; }
   p {
     display: flex;
     text-align: justify;
     flex-wrap: wrap;
-    font-size: 1.5vw;
+    font-size: 2vw;
     margin: 5px  20px 30px  20px; }
-  main .texto-clima {
-    font-size: 5vh; } }
+  .cards {
+    display: block;
+    justify-content: center; }
+  .tarj-1 .tarj-2 {
+    width: 90vw; } }
 
 @media (min-width: 480px) and (max-width: 768px) {
-  main img {
+  img {
     width: 80vw;
     height: 80vh;
     padding-top: 9px;
@@ -245,30 +303,31 @@ footer {
     display: flex;
     text-align: justify;
     flex-wrap: wrap;
-    font-size: 3vw;
-    margin: 5px 20px 30px 20px; }
-  main .cards {
-    display: block;
-    justify-content: center; }
-  .tarj-1 .tarj-2 {
-    width: 90vw; } }
+    font-size: 2vw;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px; } }
 
 @media (min-width: 220px) and (max-width: 480px) {
-  main img {
-    width: 95vw;
-    height: 65vh;
+  img {
+    width: 80vw;
+    height: 70vh;
     padding-top: 10px;
     padding-bottom: 10px; }
   h2 {
-    font-size: 5vh; }
+    font-size: 6vh; }
   h3 {
-    font-size: 5vh; }
+    font-size: 7vh; }
   p {
     display: flex;
     text-align: justify;
     flex-wrap: wrap;
-    font-size: 5vw;
-    margin: 5px 20px 30px 20px; }
+    font-size: 6vw;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px; }
   .caption {
     font-size: 4vh; }
   .provincia-galeria {
@@ -276,8 +335,8 @@ footer {
     display: table;
     background-color: black;
     padding: 5px; }
-  section .lista-1 {
+  .lista-1 {
     font-size: 4.5vh; }
-  section .cards {
+  .cards {
     display: block;
     justify-content: center; } }
