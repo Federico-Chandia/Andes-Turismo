@@ -147,7 +147,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: (urlhttp://c.files.bbci.co.uk/D348/production/_95588045_178392703.jpg);
+  background-image: url(http://c.files.bbci.co.uk/D348/production/_95588045_178392703.jpg);
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
